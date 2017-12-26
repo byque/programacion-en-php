@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	
+	<head lang="es-EC">
+		<title>Tabla</title>
+		<meta charset="UTF-8">
+	</head>
+	
+	<style>
+		table { 
+			border-collapse: collapse;
+			margin: auto;
+		}
+		table, th, td {
+			border: 1px solid black;
+		}
+		th, td {
+			padding: 5px;
+		}
+		#input_guardar {
+			text-align: right;
+		}
+	</style>
+	
+	<body>
+		<table>
+			<tr>
+				<th colspan="2">Datos Personales</th>
+			</tr>
+			<tr>
+				<th>Nombres:</th>
+				<td>
+					<form>
+						<input type="text" name="nombres">
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<th>Apellidos:</th>
+				<td>
+					<form>
+						<input type="text" name="apellidos">
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<th>Edad:</th>
+				<td>
+					<form>
+						<input type="number" name="edad">
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<th>Género:</th>
+				<td>
+					<form>
+						<input type="radio" name="genero" value="masculino" checked> Masculino<br>
+						<input type="radio" name="genero" value="femenino"> Femenino<br>
+						<input type="radio" name="genero" value="otro"> Otro<br>
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<th>Estado Civil:</th>
+				<td>
+					<select name="estado_civil">
+						<option value="soltero" selected>Soltero</option>
+						<option value="casado">Casado</option>
+						<option value="divorciado">Divorciado</option>
+						<option value="viudo">Viudo</option>
+						<option value="otro">Otro</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>Profesión:</th>
+				<td>
+					<select name="profesion">
+						<option value="abogado">Abogado</option>
+						<option value="disenador">Diseñador</option>
+						<option value="ingeniero" selected>Ingeniero</option>
+						<option value="periodista">Periodista</option>
+						<option value="otro">Otro</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>Comentarios:</th>
+				<td>
+					<textarea name="comentarios" rows="10" cols="50">Escriba aquí sus comentarios.</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" id="input_guardar">
+					<input type="submit" value="Guardar">
+				</td>
+			</tr>
+		</table>
+	</body>
+	
+</html>

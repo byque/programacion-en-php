@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+	<title>INGRESO DE DATOS</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body>
+	<form name="vehiculo" action="procesa.php" method="POST" enctype="multipart/form-data">
+		<table align="center" border="0">
+			<tr>
+				<th colspan="2">DATOS VEHICULO</th>
+			</tr>
+			<tr>
+				<td>Placa:</td>
+				<td><input type="text" name="placa" size="7"></td>
+			</tr>
+			<tr>
+				<td>Modelo:</td>
+				<td>
+					<select name="modelo">
+						<option value="2010">2010</option>
+						<option value="2011">2011</option>
+						<option value="2012">2012</option>
+						<option value="2013">2013</option>
+						<option value="2014">2014</option>
+						<option value="2015">2015</option>
+						<option value="2016">2016</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Chasis:</td>
+				<td><input type="text" name="chasis" size="15"></td>
+			</tr>
+			<tr>
+				<td>Motor:</td>
+				<td><input type="text" name="motor" size="15"></td>
+			</tr>
+			<tr>
+				<td>Tipo:</td>
+				<td>
+					<table border=0 align="left">
+						<tr>
+							<td align="left">Automóvil</td>
+							<td align="left"><input type="radio" name="tipo" value="Automóvil"></td>
+						</tr>
+						<tr>
+							<td align="left">Bus</td>
+							<td align="left"><input type="radio" name="tipo" value="Bus"></td>
+						</tr>	
+						<tr>
+							<td align="left">Camión</td>
+							<td align="left"><input type="radio" name="tipo" value="Camión"></td>
+						</tr>											
+					</table>
+				</td>
+			<tr>
+				<td>Combustible:</td>
+				<td>
+					<table border=0 align="left">
+						<tr>
+							<td align="left">Gasolina</td>
+							<td align="left"><input type="radio" name="combustible" value="Gasolina"></td>
+						</tr>
+						<tr>
+							<td align="left">Disel</td>
+							<td align="left"><input type="radio" name="combustible" value="Disel"></td>
+						</tr>	
+						<tr>
+							<td align="left">Eléctrico</td>
+							<td align="left"><input type="radio" name="combustible" value="Eléctrico"></td>
+						</tr>											
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>Accesorios</td>
+				<td>
+					<table border=0 align="left">
+						<tr>
+							<td align="left">Radio</td>
+							<td align="left"><input type="checkbox" name="radio" value="Radio"></td>
+						</tr>
+						<tr>
+							<td align="left">Alerones</td>
+							<td align="left"><input type="checkbox" name="alerones" value="Alerones"></td>
+						</tr>	
+						<tr>
+							<td align="left">Aros de Aluminio</td>
+							<td align="left"><input type="checkbox" name="aros_aluminio" value="Aros Aluminio"></td>
+						</tr>											
+					</table>
+				</td>	
+			</tr>
+			<tr>
+				<td>Foto:</td>
+				<td><input type="file" name="foto"></td>
+			</tr>
+			<tr>
+				<td>Observaciones:</td>
+				<td><textarea name="observaciones" cols="20" rows="5">Observaciones...</textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" name="enviar" value="Enviar"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
