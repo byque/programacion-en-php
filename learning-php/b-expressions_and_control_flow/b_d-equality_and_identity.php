@@ -1,0 +1,10 @@
+<?php
+	// Example 4-13. The equality and identity operators
+	
+	$a = "1000";
+	$b = "+1000";
+	
+	if ($a == $b) echo "1";
+	if ($a === $b) echo "2";
+	
+?>
